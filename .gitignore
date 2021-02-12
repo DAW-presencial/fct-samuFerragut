@@ -1,0 +1,15 @@
+fct/node_modules
+fct/public/hot
+fct/public/storage
+fct/storage/*.key
+fct/vendor
+fct/.env
+fct/.env.example
+fct/.env.backup
+fct/.phpunit.result.cache
+fct/docker-compose.override.yml
+fct/Homestead.json
+fct/Homestead.yaml
+fct/npm-debug.log
+fct/yarn-error.log
+.vscode
