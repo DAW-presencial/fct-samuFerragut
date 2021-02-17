@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Contactos;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
 
-
-Route::view('/contactos', 'contactos')->name('contactos');
-
+Route::get('/contactos', [Contactos::class, 'showContactos'])->name('contactos');
 
 
 
