@@ -30,6 +30,17 @@ return [
 
     'connections' => [
 
+        'pgsql' => [
+            'driver' => 'pgsql',
+            'host' => env('DB_HOST', 'localhost'),
+            'database' => env('DB_DATABASE', 'fct'),
+            'username' => env('DB_USERNAME', 'samu'),
+            'password' => env('DB_PASSWORD', 'samu'),
+            'charset'  => 'utf8',
+            'prefix'   => '',
+            'schema'   => 'public'
+        ],
+
         'pusher' => [
             'driver' => 'pusher',
             'key' => env('PUSHER_APP_KEY'),
